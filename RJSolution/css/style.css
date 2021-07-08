@@ -312,31 +312,40 @@ li.nav-list-item{
 
 /* MEDIA QUERIES */
 
-@media screen and (min-width: 1280px){
-    div.container{
-        width: 1280px;
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    body{
+        background-color: red;
     }
 }
-@media screen and (min-width: 601px) and (max-width: 1279px){
-    div.container{
-        width: 600px;
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    body{
+        background-color: blue;
     }
 }
-@media screen and (max-width: 600px){
-    div.container{
-        width: 360px;
-    }
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
     body{
         background-color: black;
     }
 }
 
-@media handheld{
-    div.container{
-        width: 360px;
-    }
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
     body{
-        background-color: red;
+        background-color: green;
     }
 }
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    body{
+        background-color: pink;
+    }
+}
+
 
