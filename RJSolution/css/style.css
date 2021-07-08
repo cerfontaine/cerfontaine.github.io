@@ -39,6 +39,7 @@ footer{
 /* DIV  linear-gradient(rgba(34, 37, 51, 0.9)) */
 
 div.container{
+    width: 85%;
     margin:auto;
 }
 div.header-main{
@@ -165,12 +166,9 @@ img.services_picture_square{
     box-shadow: 0 .125rem .25rem rgba(0,0,0,.075);
 }
 img.realisation-img{
-    /*width:348px;*/
-    width: 100%;
-    max-width: 5em;
-    height: auto;
+    width:348px;
     object-fit:cover;
-    /*height:223px;*/
+    height:223px;
 }
 /* LIENS */
 
@@ -183,6 +181,9 @@ a:hover{
 }
 a.know-more-link{
     padding: 0.5em;
+}
+a.know-more-link:hover{
+    text-decoration: none;
 }
 /* LISTES */
 ul {
@@ -309,43 +310,3 @@ li.nav-list-item{
     from {opacity: .4}
     to {opacity: 1}
 }
-
-/* MEDIA QUERIES */
-
-
-/* Extra small devices (phones, 600px and down) */
-@media all and (max-width: 600px) {
-    body{
-        background-color: red;
-    }
-}
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media all and (min-width: 600px) {
-    body{
-        background-color: blue;
-    }
-}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media all and (min-width: 768px) {
-    body{
-        background-color: black;
-    }
-}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media all and (min-width: 992px) {
-    body{
-        background-color: green;
-    }
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media all and (min-width: 1200px) {
-    body{
-        background-color: pink;
-    }
-}
-
-
