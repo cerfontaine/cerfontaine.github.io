@@ -331,3 +331,12 @@ li.nav-list-item{
     }
 }
 
+@media handheld{
+    div.container{
+        width: 360px;
+    }
+    body{
+        background-color: red;
+    }
+}
+
