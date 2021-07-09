@@ -26,3 +26,10 @@ function showSlides(n) {
     slides[slideIndex-1].style.display = "block";
     dots[slideIndex-1].className += " active";
 }
+
+function myFunction() {
+    var popup = document.getElementById("popup-nav");
+    var changeicon = document.getElementById("changeicon");
+    changeicon.classList.toggle("fa-times");
+    popup.classList.toggle("show");
+}

@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
 </head>
 <body>
     <header>
@@ -18,23 +19,52 @@
                 <span><i class="fas fa-envelope padding-right-1em"></i><a href="mailto:info@rjsolutions.be" style="color:white;">info@rjsolutions.be</a></span>
             </div>
         </div>
-        <div class="container">
-            <div class="header-main padding-updown-1em">
-                <h1 class="hidden">RJSolutions</h1>
-                <img src="images/logo2.jpg" class="logo">
-                <nav>
-                    <ul class="nav-list">
-                        <li class="nav-list-item"><a href="#">Accueil</a></li>
-                        <li class="nav-list-item"><a href="#aboutus">À propos</a></li>
-                        <li class="nav-list-item"><a href="#services">Nos services</a></li>
-                        <li class="nav-list-item"><a href="#realisation">Réalisations</a></li>
-                        <li class="nav-list-item"><a href="#contact">Contact</a></li>
-                    </ul>
-                </nav>
+        <div class="container header-main padding-updown-1em">
+            <h1 class="hidden">RJSolutions</h1>
+            <img src="images/logo2.jpg" class="logo">
+            <nav class="nav-header">
+                <ul class="nav-list">
+                    <li class="nav-list-item"><a href="#">Accueil</a></li>
+                    <li class="nav-list-item"><a href="#aboutus">À propos</a></li>
+                    <li class="nav-list-item"><a href="#services">Nos services</a></li>
+                    <li class="nav-list-item"><a href="#realisation">Réalisations</a></li>
+                    <li class="nav-list-item"><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="border container"></div>
+    </header>
+
+    <div class="header-mobile">
+        <div class="phone padding-updown-1em" id="phone">
+            <div class="contact-top container">
+                <span><i class="fas fa-phone-volume padding-right-1em"></i>0476 86 79 40</span>
+                <span><i class="fas fa-envelope padding-right-1em"></i><a href="mailto:info@rjsolutions.be" style="color:white;">info@rjsolutions.be</a></span>
             </div>
         </div>
-    </header>
-    <div class="border container"></div>
+        <div class="phone padding-updown-1em" id="contactlittle">
+            <div class="contact-top container">
+                <a id="little" class="white" href="#contact">Contactez-nous</a>
+            </div>
+        </div>
+        <div class="container header-mobile-main padding-updown-1em">
+            <img src="images/logo2.jpg" class="logo">
+            <div class="menu-mobile-container">
+                <span onclick="myFunction()">Menu <i class="fas fa-bars" id="changeicon"></i></span>
+                <div class="hidden-container" id="popup-nav">
+                    <ul class="nav-list-mobile">
+                        <li class="nav-list-mobile-item"><a href="#">Accueil</a></li>
+                        <li class="nav-list-mobile-item"><a href="#aboutus">À propos</a></li>
+                        <li class="nav-list-mobile-item"><a href="#services">Nos services</a></li>
+                        <li class="nav-list-mobile-item"><a href="#realisation">Réalisations</a></li>
+                        <li class="nav-list-mobile-item"><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="border container"></div>
+    </div>
+
     <main>
         <!-- SLIDER -->
 
@@ -76,77 +106,69 @@
         <!-- END OF SLIDER -->
 
         <section id="aboutus" class="gray margin-top-1em">
-            <div class="container">
-                <div class="div-section-aboutus padding-updown-1em">
-                    <div class="about-us-left">
-                        <h2>À propos</h2>
-                        <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,</p>
-                        <p>sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? </p>
-                    </div>
-                    <div class="about-us-right">
-                        <img class="profile" src="images/profile.jpg">
-                    </div>
+            <div class="container div-section-aboutus padding-updown-1em">
+                <div class="about-us-left">
+                    <h2>À propos</h2>
+                    <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,</p>
+                    <p>sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? </p>
+                </div>
+                <div class="about-us-right">
+                    <img class="profile" src="images/profile.jpg">
                 </div>
             </div>
         </section>
 
         <!-- Entreprise générale | CertIBEau -->
         <section id="services" class="margin-top-1em">
-            <div class="container">
-                <div class="services-container padding-updown-1em">
-                    <h2>Nos services</h2>
-                    <div class="article-container">
-                        <article class="an_article">
-                            <div class="container-anarticle">
-                                <img src="images/entreprise_generale.jpg" class="services_picture">
-                                <h3>Entreprise générale</h3>
-                                <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,</p>
-                            </div>
-                            <div class="know-more padding-updown-1em">
-                                <a href="#entreprisegen" class="know-more-link">En savoir plus</a>
-                            </div>
-                        </article>
-                        <article class="an_article">
-                            <div class="container-anarticle">
-                                <img src="images/certibeau.png" class="services_picture">
-                                <h3>CertIBEau</h3>
-                                <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit</p>
-                            </div>
-                            <div class="know-more padding-updown-1em">
-                                <a href="#certibeau" class="know-more-link">En savoir plus</a>
-                            </div>
-                        </article>
-                    </div>
+            <div class="container services-container padding-updown-1em">
+                <h2>Nos services</h2>
+                <div class="article-container flex-column">
+                    <article class="an_article">
+                        <div class="container-anarticle">
+                            <img src="images/entreprise_generale.jpg" class="services_picture">
+                            <h3>Entreprise générale</h3>
+                            <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,</p>
+                        </div>
+                        <div class="know-more padding-updown-1em">
+                            <a href="#entreprisegen" class="know-more-link">En savoir plus</a>
+                        </div>
+                    </article>
+                    <article class="an_article">
+                        <div class="container-anarticle">
+                            <img src="images/certibeau.png" class="services_picture">
+                            <h3>CertIBEau</h3>
+                            <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit</p>
+                        </div>
+                        <div class="know-more padding-updown-1em">
+                            <a href="#certibeau" class="know-more-link">En savoir plus</a>
+                        </div>
+                    </article>
                 </div>
             </div>
         </section>
 
         <section id="entreprisegen" class="gray margin-top-1em">
-            <div class="container">
-                <div class="div-section-aboutus padding-updown-1em">
-                    <div class="about-us-right">
-                        <img class="services_picture_square" src="images/entreprise_generale.jpg">
-                    </div>
-                    <div class="about-us-left">
-                        <h2>Entreprise générale</h2>
-                        <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,</p>
-                        <p>sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? </p>
-                    </div>
+            <div class="container div-section-aboutus padding-updown-1em">
+                <div class="about-us-right">
+                    <img class="services_picture_square" src="images/entreprise_generale.jpg">
+                </div>
+                <div class="about-us-left">
+                    <h2>Entreprise générale</h2>
+                    <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,</p>
+                    <p>sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? </p>
                 </div>
             </div>
         </section>
 
         <section id="certibeau" class="margin-top-1em">
-            <div class="container">
-                <div class="div-section-aboutus padding-updown-1em">
-                    <div class="about-us-left">
-                        <h2>CertIBEau</h2>
-                        <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,</p>
-                        <p>sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? </p>
-                    </div>
-                    <div class="about-us-right">
-                        <img class="services_picture_square" src="images/certibeau.png">
-                    </div>
+            <div class="container div-section-aboutus padding-updown-1em">
+                <div class="about-us-left">
+                    <h2>CertIBEau</h2>
+                    <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,</p>
+                    <p>sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? </p>
+                </div>
+                <div class="about-us-right">
+                    <img class="services_picture_square" src="images/certibeau.png">
                 </div>
             </div>
         </section>
@@ -155,7 +177,7 @@
             <div class="container">
                 <h2>Réalisation</h2>
                 <div class="realisation-table">
-                    <div class="realisation-row">
+                    <div class="realisation-row flex-column">
                         <div class="realisation-img-container">
                             <img class="realisation-img" src="images/real_test_1.jpg">
                             <div class="content">Superbe maison</div>
@@ -175,7 +197,7 @@
     </main>
     <footer>
         <section id="contact">
-            <div class="footer-div container padding-updown-1em">
+            <div class="footer-div container flex-column padding-updown-1em">
                 <div class="footer-link col">
                     <h2>Sommaire</h2>
                     <ul>
@@ -195,7 +217,7 @@
                     <span><i class="fas fa-phone-volume padding-right-1em"></i>0476 86 79 40</span>
                 </div>
                 <div class="footer-map col">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2525.8222209166097!2d5.341475715656493!3d50.7232372755525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c1032ab5a3ddbd%3A0x4e83f8f323fdc397!2sRue%20Louis%20Mar%C3%A9chal%2043%2C%204360%20Oreye!5e0!3m2!1sfr!2sbe!4v1625584902546!5m2!1sfr!2sbe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2525.8222209166097!2d5.341475715656493!3d50.7232372755525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c1032ab5a3ddbd%3A0x4e83f8f323fdc397!2sRue%20Louis%20Mar%C3%A9chal%2043%2C%204360%20Oreye!5e0!3m2!1sfr!2sbe!4v1625584902546!5m2!1sfr!2sbe"  style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                 </div>
             </div>
         </section>
