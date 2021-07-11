@@ -183,6 +183,9 @@ img.realisation-img{
     width:348px;
     height:223px;
 }
+img.image_article_vertical{
+    width: 40%;
+}
 /* LIENS */
 
 a{
