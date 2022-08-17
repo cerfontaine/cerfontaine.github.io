@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Playfair+Display:wght@500&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+body {
+    background-color : #fff;
+}
+
+h1{
+    font-size: 1.7rem;
+    font-family: 'Montserrat', sans-serif;
+    width: fit-content;
+}
+
+h2{
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    font-size: 5rem;
+    line-height: 3.2rem;
+    font-family: 'Playfair Display', serif;
+}
+
+a.nav{
+    text-decoration: none;
+    width: auto;
+}
+.nav:hover{
+    text-decoration : underline;
+}
+
+section.background{
+    background: url("../assets/background.png") top center;
+    background-size: cover;
+    height: 100vh;
+    top: -72px;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+}
+
+section.about{
+    display: flex;
+    margin: 1rem auto -72px auto;
+    max-width: 90rem;
+    width: 100%;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    justify-content: center;
+    height: 100vh;
+}
+section.skills{
+    min-height:100vh;
+}
+
+li.skill{
+    font-size: 4em;
+}
+.show{
+    display:block !important;
+}

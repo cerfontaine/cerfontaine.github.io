@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dorian Cerfontaine</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="app.js"></script>
+</head>
+<body>
+<header>
+    <nav class="border-gray-200 px-2 sm:px-4 py-2.5">
+        <div class="container flex flex-wrap justify-between items-center mx-auto">
+            <a href="#" class="flex items-center">
+                <h1 class="nav self-center text-xl text-white font-semibold whitespace-nowrap">Dorian Cerfontaine</h1>
+            </a>
+            <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false" onclick="myFunction()">
+                <span class="sr-only">Open main menu</span>
+                <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+            </button>
+            <div class="hidden bg-blue-400 w-full rounded md:block md:w-auto md:bg-transparent" id="navbar-default">
+                <ul class="flex flex-col p-4 mt-4 rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0">
+                    <li>
+                        <a href="#about" class="nav block py-2 pr-4 pl-3 text-white rounded md:bg-transparent md:p-0 dark:text-white js-scroll-trigger">About</a>
+                    </li>
+                    <li>
+                        <a href="#skills" class="nav block py-2 pr-4 pl-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent js-scroll-trigger">Skills</a>
+                    </li>
+                    <li>
+                        <a href="#projects" class="nav block py-2 pr-4 pl-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent js-scroll-trigger">Projects</a>
+                    </li>
+                    <li>
+                        <a href="#pictures" class="nav block py-2 pr-4 pl-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent js-scroll-trigger">Pictures</a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="nav block py-2 pr-4 pl-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent js-scroll-trigger">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section class="background">
+    </section>
+    <section class="about">
+        <div class="m-auto text-center h-4/5 md:flex md:justify-center md:items-center md:m-0 ">
+            <div>
+                <img class="w-40 md:w-60 rounded-full h-auto m-auto" src="assets/avatar.jpg">
+            </div>
+            <div>
+                <p class="text-white text-4xl font-bold mb-5">Hi, I'm Dorian </p>
+                <p class="text-white">I'm 21 years old and I speak French, English and Dutch. Recently graduated in cybersecurity and development enthusiast, I'm looking for a first professional experience in development ! </p>
+            </div>
+        </div>
+    </section>
+</header>
+<main>
+    <section class="skills" id="about">
+        <div class="w-9/12 m-auto h-screen flex justify-center flex-col">
+            <h2 class="text-center text-5xl mb-16 font-bold">About</h2>
+            <h3 class="text-center text-3xl mb-10">Education</h3>
+            <div class="overflow-x-auto relative mb-10">
+                <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
+                    <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+                    <tr>
+                        <th scope="col" class="py-3 px-6">
+                            Title
+                        </th>
+                        <th scope="col" class="py-3 px-6">
+                            School
+                        </th>
+                        <th scope="col" class="py-3 px-6">
+                            Period
+                        </th>
+                        <th scope="col" class="py-3 px-6">
+                            More info
+                        </th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                        <th scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                            Bachelor in cybersecurity
+                        </th>
+                        <td class="py-4 px-6">
+                            HELMo Sainte-Marie
+                        </td>
+                        <td class="py-4 px-6">
+                            September 2019 - June 2022
+                        </td>
+                        <td class="py-4 px-6">
+                            Graduated with honours
+                        </td>
+                    </tr>
+                    <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                        <th scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                            Bachelor in Applied Computer Sciences
+                        </th>
+                        <td class="py-4 px-6">
+                            Howest Brugge
+                        </td>
+                        <td class="py-4 px-6">
+                            September 2021 - January 2022
+                        </td>
+                        <td class="py-4 px-6">
+                            ERASMUS BELGICA
+                        </td>
+                    </tr>
+                    <tr class="bg-white dark:bg-gray-800">
+                        <th scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                            Bachelor in Economics and Management
+                        </th>
+                        <td class="py-4 px-6">
+                            HEC Liège
+                        </td>
+                        <td class="py-4 px-6">
+                            September 2018 - June 2019
+                        </td>
+                        <td class="py-4 px-6">
+
+                        </td>
+                    </tr>
+                    <tr class="bg-white dark:bg-gray-800">
+                        <th scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                            CESS, scientific orientation
+                        </th>
+                        <td class="py-4 px-6">
+                            Athénée Royal de Herstal
+                        </td>
+                        <td class="py-4 px-6">
+                            September 2012 - June 2018
+                        </td>
+                        <td class="py-4 px-6">
+
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <h3 class="text-center text-3xl mb-10">Spare time</h3>
+            <ul class="flex flex-wrap justify-center">
+                <li class="text-6xl mb-4 mr-4"><i class="fa-solid fa-person-biking"></i></li>
+                <li class="text-6xl mb-4 mr-4"><i class="fa-solid fa-camera"></i></li>
+                <li class="text-6xl mb-4 mr-4"><i class="fa-solid fa-book"></i></li>
+                <li class="text-6xl mb-4 mr-4"><i class="fa-solid fa-music"></i></li>
+                <li class="text-6xl mb-4 mr-4"><i class="fa-solid fa-gamepad"></i></li>
+                <li class="text-6xl mb-4 mr-4"><i class="fa-solid fa-masks-theater"></i></li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="skills" id="skills">
+        <div class="text-center w-9/12 m-auto h-screen flex justify-center items-center flex-col">
+            <h2 class="text-5xl mb-16 font-bold">My skills</h2>
+            <ul class="flex flex-wrap justify-center">
+                <li class="text-6xl mb-4 mr-4"><i class="fa-brands fa-html5"></i></li>
+                <li class="text-6xl mb-4 mr-4"><i class="fa-brands fa-css3-alt"></i></li>
+                <li class="text-6xl mb-4 mr-4"><i class="fa-brands fa-sass"></i></li>
+                <li class="text-6xl mb-4 mr-4"><i class="fa-brands fa-php"></i></li>
+                <li class="text-6xl mb-4 mr-4"><i class="fa-brands fa-js"></i></li>
+                <li class="text-6xl mb-4 mr-4"><i class="fa-brands fa-python"></i></li>
+                <li class="text-6xl mb-4 mr-4"><i class="fa-brands fa-react"></i></li>
+                <li class="text-6xl mb-4 mr-4"><i class="fa-solid fa-database"></i></li>
+                <li class="text-6xl mb-4 mr-4"><i class="fa-brands fa-linux"></i></li>
+                <li class="text-6xl mb-4 mr-4"><i class="fa-brands fa-windows"></i></li>
+                <li class="text-6xl mb-4 mr-4"><i class="fa-brands fa-apple"></i></li>
+                <li class="text-6xl mb-4 mr-4"><i class="fa-brands fa-cloudflare"></i></li>
+                <li class="text-6xl mb-4 mr-4"><i class="fa-brands fa-aws"></i></li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="skills" id="projects">
+        <div class="text-center w-9/12 m-auto">
+            <h2 class="font-bold text-5xl">My projects</h2>
+
+            <a href="#" class="mt-14 flex flex-col items-center bg-white rounded-lg border shadow-md md:flex-row hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+                <img class="object-cover w-full h-96 rounded-t-lg md:h-auto md:w-2/4 md:rounded-none md:rounded-l-lg" src="assets/duckker.png" alt="">
+                <div class="flex flex-col justify-between p-4 leading-normal">
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Duckker - Chat App - 2022</h5>
+                    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">I'm currently working on a small chat-app. I'm building it with ReactJS and PHP for the backend. I would also like to create a mobile app with React-Native and manage the data with Neo4J.  </p>
+                </div>
+            </a>
+
+            <a href="https://github.com/cerfontaine/Thornhill-Sanity-React" class="mt-14 flex flex-col items-center bg-white rounded-lg border shadow-md md:flex-row hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+                <div class="flex flex-col justify-between p-4 leading-normal">
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Thornhill Utilities - 2021</h5>
+                    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Website built with ReactJS and Sanity.io for a fictive company called Thornhill.</p>
+                </div>
+                <img class="object-cover w-full h-96 rounded-t-lg md:h-auto md:w-2/4 md:rounded-none md:rounded-l-lg" src="assets/thornhill.jpg" alt="">
+            </a>
+
+            <a href="https://www.rjsolutions.be/" class="mt-14 flex flex-col items-center bg-white rounded-lg border shadow-md md:flex-row hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+                <img class="object-cover w-full h-96 rounded-t-lg md:h-auto md:w-2/4 md:rounded-none md:rounded-l-lg" src="assets/rjsolutions.png" alt="">
+                <div class="flex flex-col justify-between p-4 leading-normal">
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">RJSolutions - 2021</h5>
+                    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Showcase website built with PHP and Javascript for a construction company called RJSolutions.</p>
+                </div>
+            </a>
+
+        </div>
+    </section>
+
+    <section class="overflow-hidden skills mt-20" id="pictures">
+        <div class="text-center w-9/12 m-auto h-screen flex justify-center items-center flex-col">
+            <h2 class="font-bold text-5xl mb-16">My pictures</h2>
+            <div class="">
+                <div class="flex flex-wrap -m-1 md:-m-2">
+                    <div class="flex flex-wrap md:w-1/3 w-1/2">
+                        <div class="w-full p-1 md:p-2">
+                            <img alt="gallery" class="block object-cover object-center w-full h-full rounded-lg"
+                                 src="assets/photo1.png">
+                        </div>
+                    </div>
+                    <div class="flex flex-wrap md:w-1/3 w-1/2">
+                        <div class="w-full p-1 md:p-2">
+                            <img alt="gallery" class="block object-cover object-center w-full h-full rounded-lg"
+                                 src="assets/photo2.jpg">
+                        </div>
+                    </div>
+                    <div class="flex flex-wrap md:w-1/3 w-1/2">
+                        <div class="w-full p-1 md:p-2">
+                            <img alt="gallery" class="block object-cover object-center w-full h-full rounded-lg"
+                                 src="assets/photo3.jpg">
+                        </div>
+                    </div>
+                    <div class="flex flex-wrap md:w-1/3 w-1/2">
+                        <div class="w-full p-1 md:p-2">
+                            <img alt="gallery" class="block object-cover object-center w-full h-full rounded-lg"
+                                 src="assets/photo4.jpg">
+                        </div>
+                    </div>
+                    <div class="flex flex-wrap md:w-1/3 w-1/2">
+                        <div class="w-full p-1 md:p-2">
+                            <img alt="gallery" class="block object-cover object-center w-full h-full rounded-lg"
+                                 src="assets/photo5.jpg">
+                        </div>
+                    </div>
+                    <div class="flex flex-wrap md:w-1/3 w-1/2">
+                        <div class="w-full p-1 md:p-2">
+                            <img alt="gallery" class="block object-cover object-center w-full h-full rounded-lg"
+                                 src="assets/photo6.jpg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<footer class="p-4 bg-white shadow md:px-6 md:py-8 dark:bg-gray-900" id="contact">
+    <div class="container m-auto">
+        <div class="sm:flex sm:items-center sm:justify-between">
+            <a href="#" class="flex items-center mb-4 sm:mb-0">
+                <span class="self-center nav self-center text-xl text-white font-semibold whitespace-nowrap whitespace-nowrap dark:text-white">Dorian Cerfontaine</span>
+            </a>
+            <ul class="flex flex-wrap items-center mb-6 text-sm text-gray-500 sm:mb-0 dark:text-gray-400">
+                <li>
+                    <a href="#about" class="mr-4 hover:underline md:mr-6 ">About</a>
+                </li>
+                <li>
+                    <a href="#skills" class="mr-4 hover:underline md:mr-6">Skills</a>
+                </li>
+                <li>
+                    <a href="#projects" class="mr-4 hover:underline md:mr-6 ">Projects</a>
+                </li>
+                <li>
+                    <a href="#pictures" class="mr-4 hover:underline md:mr-6 ">Pictures</a>
+                </li>
+
+                <li>
+                    <a href="#contact" class="hover:underline">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+        <div class="sm:flex sm:items-center sm:justify-between">
+        <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2022 <a href="#" class="hover:underline">Dorian Cerfontaine</a>. All Rights Reserved.
+        </span>
+            <div class="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
+                <a href="https://www.linkedin.com/in/dorian-cerfontaine-46643a1aa/" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+                    <i class="fa-brands fa-linkedin w-5 h-5"></i>
+                    <span class="sr-only">linkedin</span>
+                </a>
+                <a href="https://www.instagram.com/d.cerfontaine/" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+                    <i class="fa-brands fa-instagram"></i>
+                    <span class="sr-only">Instagram page</span>
+                </a>
+                <a href="https://twitter.com/finchontaine" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+                    <i class="fa-brands fa-twitter"></i>
+                    <span class="sr-only">Twitter page</span>
+                </a>
+                <a href="https://github.com/cerfontaine" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+                    <i class="fa-brands fa-github"></i>
+                    <span class="sr-only">GitHub account</span>
+                </a>
+                <a href="mailto:dorian4651@hotmail.com" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+                    <i class="fa-solid fa-envelope"></i>
+                    <span class="sr-only">Mail account</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+</footer>
+</body>
+</html>
